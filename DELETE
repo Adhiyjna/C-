@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int i,n;
+    int *p;
+    p= new int[5];
+
+    cout<<"enter how  many numer you want";
+    cin>>n;
+
+    cout<<"\nplease put the numbers u want";
+
+    for(i=0;i<n;i++)
+    {
+        cin>>*(p+i);
+    }
+
+    for(i=0;i<n;i++)
+    {
+        cout<<"\n no.s are"<<*(p+i);
+    }
+
+    delete [] p;
+
+}
