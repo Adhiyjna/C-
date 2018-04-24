@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int arr[10];
+    int i,n;
+    int sum=0;
+    cin>>n;
+    for(i=1;i<=n;i++)
+    {
+        cin>>arr[i];
+    }
+    for(i=1;i<=n;i++)
+    {
+        sum+=arr[i];
+    }
+    //sum of all no.
+    cout<<sum;
+    //avg of all no.
+    cout<<sum/n;
+}
